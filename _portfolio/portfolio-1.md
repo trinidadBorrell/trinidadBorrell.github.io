@@ -1,10 +1,4 @@
----
-title: "Portfolio item number 1"
-excerpt: 
-collection: portfolio
----
-
-## 💻 Projects
+## 💻 GitHub - Uploaded Projects
 
 Here are some of the projects I’ve uploaded to GitHub, showcasing my work and contributions:
 
