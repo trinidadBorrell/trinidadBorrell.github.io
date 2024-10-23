@@ -1,6 +1,10 @@
-## 💻 GitHub - Uploaded Projects
+---
+title: "Github Uploaded Projects"
+excerpt: "Here are some of the projects I’ve uploaded to GitHub, showcasing my work and contributions"
+collection: portfolio
+---
 
-Here are some of the projects I’ve uploaded to GitHub, showcasing my work and contributions:
+## 💻 GitHub Uploaded Projects
 
 ### 1. **Adversarial Attacks in Human Perception**
 This repository generates targeted and untargeted adversarial attacks that fool an ensamble of convolutional pretrained neural networs using iterative Fast Gradient Sign Method (iFGSM) and Fast Gradient Sign Method (FGSM).    
