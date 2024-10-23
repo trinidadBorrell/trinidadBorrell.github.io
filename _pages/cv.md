@@ -37,10 +37,10 @@ Schools and Courses
   
 Teaching
 ======
-* Data Science Tutor | Coder House
+* Data Science Tutor - Coder House
   * October 2021 - April 2022
 
-* Python Tutor | Argentine Interstudent Physics Federation 
+* Python Tutor - Argentine Interstudent Physics Federation 
   * 2021 - 2024 
 
 Posters
