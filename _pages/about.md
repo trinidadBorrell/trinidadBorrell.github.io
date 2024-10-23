@@ -18,10 +18,4 @@ Currently, I'm working at [Consciousness, Culture, and Complexity lab](https://w
 
 As I continue to build my expertise in knowledge in computational approaches, I’m excited about the opportunities that will allow me to push the boundaries of what I can achieve. My focus remains on applying computational tools to solve complex problems in neuroscience and beyond. 
 
----
-
-##  :eyes: What you will find here
-
-- Check out the _Projects_ section to view in a more nicely introduced way some of my github uploaded projects. 
-- To have a deeper insight into my profile and experience check out my _CV_ section.
 
