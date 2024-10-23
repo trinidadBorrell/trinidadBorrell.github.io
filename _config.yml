@@ -21,7 +21,7 @@ repository               : "trinidadBorrell/trinidadBorrell.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Trinidad Borrell"
   pronouns         : "she/her"  
   bio              : "Physics student and python enthusiast"

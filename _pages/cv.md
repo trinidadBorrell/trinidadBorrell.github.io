@@ -11,54 +11,40 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Licenciate in Physics (_Equivalent to BSc and MSc_), University of Buenos Aires, 2025 (expected)
 
-Work experience
+Reaserch Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Reaserch Assistant
+  * [COCUCO Lab](https://www.cocucolab.org/)
+  * Febuary 2024 - Today
+  * Supervisor: Enzo Tagliazucchi
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Research Intern
+  * [Lambda Lab](http://lambda.df.uba.ar/portfolio/about/)
+  * March 2023 - December 2023
+  * Main Supervisor: Dario Rodrigues
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
+Schools and Courses
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Brains, Minds and Machines Summer Course
+  * MIT-Harvard University
+  * August 2024
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
+* Computational Neuroscience Course
+  * Neuromatch Academy
+  * July 2024
   
 Teaching
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
+* Data Science Tutor | Coder House
+  * October 2021 - April 2022
+
+* Python Tutor | Argentine Interstudent Physics Federation 
+  * 2021 - 2024 
+
+Posters
 ======
-* Currently signed in to 43 different slack teams
+  
+Volunteering
+======
