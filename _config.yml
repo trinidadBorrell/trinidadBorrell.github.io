@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Trinidad Borrell"
   pronouns         : "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Physics student and python enthusiast"
   location         : "Buenos Aires, Argentina"
   employer         : "University of Buenos Aires"
   uri              : # URL
@@ -57,7 +57,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "trinidad-borrell" # Username
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
