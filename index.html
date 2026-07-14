@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script>document.documentElement.classList.add('js');</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trinidad Borrell · AI Safety, Deep Learning & Computational Neuroscience</title>
+  <meta name="description" content="Trinidad Borrell, physicist turned neuroscientist and deep learning researcher. PhD candidate at the Paris Brain Institute and Forschungszentrum Jülich, working on AI safety, mechanistic interpretability, and EEG foundation models.">
+  <meta name="author" content="Trinidad Borrell">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Trinidad Borrell">
+  <meta property="og:description" content="Physicist turned neuroscientist and deep learning researcher working on AI safety, mechanistic interpretability, and brain foundation models.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/site.css?v=2">
+</head>
+<body>
+
+  <!-- ============ Header ============ -->
+  <header class="site-header" id="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top">Trinidad <span>Borrell</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#talks">Talks &amp; Grants</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ Hero ============ -->
+    <section class="hero container" style="border-top:0;">
+      <div class="hero-grid">
+        <div class="hero-text reveal">
+          <span class="hero-eyebrow"><span class="dot"></span> Open to research collaborations</span>
+          <h1>Trinidad <em>Borrell</em></h1>
+          <p class="role">PhD Candidate · AI Safety, Deep Learning &amp; Computational Neuroscience</p>
+          <p class="blurb">I'm a physicist turned neuroscientist and deep learning researcher at the Paris Brain Institute and Forschungszentrum Jülich, working across mechanistic interpretability, AI safety, and foundation models for the human brain.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="assets/download/Trinidad_Borrell_CV.pdf" download>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+              Download CV
+            </a>
+            <a class="btn btn-ghost" href="#publications">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h11M4 10h11M4 15h7"/><path d="M18 8v9m0 0l3-3m-3 3l-3-3"/></svg>
+              View publications
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a class="icon-btn" href="mailto:triniborrell@gmail.com" aria-label="Email" title="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </a>
+            <a class="icon-btn" href="https://github.com/trinidadBorrell" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.48v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.34 9.34 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.48A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+            </a>
+            <a class="icon-btn" href="https://linkedin.com/in/trinidad-borrell" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-portrait reveal">
+          <figure class="hero-figure" aria-label="Generative constellation of linked nodes, evoking neural and cosmic networks">
+            <svg viewBox="0 0 340 368" role="img" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="figBg" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#1a2142"/>
+                  <stop offset="100%" stop-color="#0f1329"/>
+                </linearGradient>
+                <radialGradient id="figGlowA" cx="80%" cy="8%" r="75%">
+                  <stop offset="0%" stop-color="#8098f0" stop-opacity="0.42"/>
+                  <stop offset="60%" stop-color="#8098f0" stop-opacity="0"/>
+                </radialGradient>
+                <radialGradient id="figGlowB" cx="6%" cy="98%" r="70%">
+                  <stop offset="0%" stop-color="#4fd0e6" stop-opacity="0.30"/>
+                  <stop offset="60%" stop-color="#4fd0e6" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+              <rect x="0" y="0" width="340" height="368" fill="url(#figBg)"/>
+              <rect x="0" y="0" width="340" height="368" fill="url(#figGlowA)"/>
+              <rect x="0" y="0" width="340" height="368" fill="url(#figGlowB)"/>
+              <g class="fig-edges">
+      <line class="edge edge--hl" x1="119.3" y1="73.7" x2="46.1" y2="54.7"/>
+      <line class="edge edge--hl" x1="119.3" y1="73.7" x2="61.7" y2="96.5"/>
+      <line class="edge edge--hl" x1="119.3" y1="73.7" x2="178.1" y2="72.3"/>
+      <line class="edge edge--hl" x1="119.3" y1="73.7" x2="125.9" y2="31.7"/>
+      <line class="edge edge--hl" x1="213.5" y1="48.9" x2="307.2" y2="40.7"/>
+      <line class="edge edge--hl" x1="213.5" y1="48.9" x2="178.1" y2="72.3"/>
+      <line class="edge edge--hl" x1="213.5" y1="48.9" x2="267.9" y2="69.3"/>
+      <line class="edge edge--hl" x1="213.5" y1="48.9" x2="125.9" y2="31.7"/>
+      <line class="edge" x1="180.3" y1="141.6" x2="222.0" y2="161.1"/>
+      <line class="edge" x1="180.3" y1="141.6" x2="106.2" y2="157.2"/>
+      <line class="edge" x1="180.3" y1="141.6" x2="178.1" y2="72.3"/>
+      <line class="edge" x1="42.7" y1="186.3" x2="78.0" y2="209.8"/>
+      <line class="edge" x1="42.7" y1="186.3" x2="37.3" y2="237.2"/>
+      <line class="edge" x1="42.7" y1="186.3" x2="55.2" y2="140.9"/>
+      <line class="edge" x1="46.1" y1="54.7" x2="61.7" y2="96.5"/>
+      <line class="edge" x1="46.1" y1="54.7" x2="125.9" y2="31.7"/>
+      <line class="edge" x1="148.3" y1="287.3" x2="206.7" y2="325.5"/>
+      <line class="edge edge--hl" x1="148.3" y1="287.3" x2="162.5" y2="235.9"/>
+      <line class="edge" x1="148.3" y1="287.3" x2="214.1" y2="278.7"/>
+      <line class="edge edge--hl" x1="148.3" y1="287.3" x2="89.2" y2="327.0"/>
+      <line class="edge" x1="61.7" y1="96.5" x2="55.2" y2="140.9"/>
+      <line class="edge" x1="206.7" y1="325.5" x2="267.9" y2="324.5"/>
+      <line class="edge" x1="206.7" y1="325.5" x2="214.1" y2="278.7"/>
+      <line class="edge edge--hl" x1="307.2" y1="40.7" x2="273.2" y2="117.5"/>
+      <line class="edge edge--hl" x1="307.2" y1="40.7" x2="267.9" y2="69.3"/>
+      <line class="edge" x1="273.2" y1="117.5" x2="222.0" y2="161.1"/>
+      <line class="edge" x1="273.2" y1="117.5" x2="301.5" y2="167.3"/>
+      <line class="edge" x1="273.2" y1="117.5" x2="267.9" y2="69.3"/>
+      <line class="edge" x1="78.0" y1="209.8" x2="37.3" y2="237.2"/>
+      <line class="edge" x1="78.0" y1="209.8" x2="106.2" y2="157.2"/>
+      <line class="edge" x1="78.0" y1="209.8" x2="132.3" y2="205.0"/>
+      <line class="edge" x1="222.0" y1="161.1" x2="226.2" y2="213.8"/>
+      <line class="edge" x1="222.0" y1="161.1" x2="301.5" y2="167.3"/>
+      <line class="edge" x1="254.8" y1="246.9" x2="226.2" y2="213.8"/>
+      <line class="edge" x1="254.8" y1="246.9" x2="300.5" y2="244.2"/>
+      <line class="edge" x1="254.8" y1="246.9" x2="214.1" y2="278.7"/>
+      <line class="edge" x1="254.8" y1="246.9" x2="311.1" y2="289.1"/>
+      <line class="edge" x1="37.3" y1="237.2" x2="33.3" y2="302.3"/>
+      <line class="edge edge--hl" x1="37.3" y1="237.2" x2="74.1" y2="269.9"/>
+      <line class="edge" x1="226.2" y1="213.8" x2="214.1" y2="278.7"/>
+      <line class="edge" x1="267.9" y1="324.5" x2="214.1" y2="278.7"/>
+      <line class="edge" x1="267.9" y1="324.5" x2="311.1" y2="289.1"/>
+      <line class="edge edge--hl" x1="162.5" y1="235.9" x2="132.3" y2="205.0"/>
+      <line class="edge edge--hl" x1="162.5" y1="235.9" x2="214.1" y2="278.7"/>
+      <line class="edge" x1="106.2" y1="157.2" x2="132.3" y2="205.0"/>
+      <line class="edge" x1="106.2" y1="157.2" x2="55.2" y2="140.9"/>
+      <line class="edge" x1="300.5" y1="244.2" x2="301.5" y2="167.3"/>
+      <line class="edge" x1="300.5" y1="244.2" x2="311.1" y2="289.1"/>
+      <line class="edge edge--hl" x1="33.3" y1="302.3" x2="74.1" y2="269.9"/>
+      <line class="edge edge--hl" x1="33.3" y1="302.3" x2="89.2" y2="327.0"/>
+      <line class="edge" x1="178.1" y1="72.3" x2="125.9" y2="31.7"/>
+      <line class="edge edge--hl" x1="74.1" y1="269.9" x2="89.2" y2="327.0"/>
+              </g>
+              <g class="fig-nodes">
+      <circle class="node node--cyan" cx="119.3" cy="73.7" r="2.7" style="--d:3.28s;--t:4.24s"/>
+      <circle class="node node--cyan" cx="213.5" cy="48.9" r="2.7" style="--d:1.98s;--t:5.2s"/>
+      <circle class="node" cx="180.3" cy="141.6" r="2.7" style="--d:1.57s;--t:4.42s"/>
+      <circle class="node node--lg" cx="42.7" cy="186.3" r="4.6" style="--d:2.75s;--t:5.56s"/>
+      <circle class="node" cx="46.1" cy="54.7" r="2.7" style="--d:1.37s;--t:5.2s"/>
+      <circle class="node" cx="148.3" cy="287.3" r="2.7" style="--d:2.83s;--t:4.73s"/>
+      <circle class="node node--lg" cx="61.7" cy="96.5" r="4.6" style="--d:1.62s;--t:4.03s"/>
+      <circle class="node node--lg" cx="206.7" cy="325.5" r="4.6" style="--d:0.22s;--t:3.51s"/>
+      <circle class="node node--cyan" cx="307.2" cy="40.7" r="2.7" style="--d:0.28s;--t:4.98s"/>
+      <circle class="node" cx="273.2" cy="117.5" r="2.7" style="--d:1.02s;--t:3.59s"/>
+      <circle class="node" cx="78.0" cy="209.8" r="2.7" style="--d:0.34s;--t:5.22s"/>
+      <circle class="node" cx="222.0" cy="161.1" r="2.7" style="--d:3.48s;--t:4.81s"/>
+      <circle class="node" cx="254.8" cy="246.9" r="2.7" style="--d:1.13s;--t:3.78s"/>
+      <circle class="node" cx="37.3" cy="237.2" r="2.7" style="--d:1.17s;--t:4.3s"/>
+      <circle class="node node--lg" cx="226.2" cy="213.8" r="4.6" style="--d:0.63s;--t:4.27s"/>
+      <circle class="node node--lg" cx="267.9" cy="324.5" r="4.6" style="--d:1.05s;--t:5.51s"/>
+      <circle class="node node--cyan node--lg" cx="162.5" cy="235.9" r="4.6" style="--d:3.89s;--t:4.51s"/>
+      <circle class="node node--lg" cx="106.2" cy="157.2" r="4.6" style="--d:0.98s;--t:5.52s"/>
+      <circle class="node" cx="132.3" cy="205.0" r="2.7" style="--d:1.24s;--t:4.06s"/>
+      <circle class="node" cx="300.5" cy="244.2" r="2.7" style="--d:0.0s;--t:4.12s"/>
+      <circle class="node" cx="55.2" cy="140.9" r="2.7" style="--d:1.9s;--t:4.41s"/>
+      <circle class="node node--lg" cx="33.3" cy="302.3" r="4.6" style="--d:0.8s;--t:4.41s"/>
+      <circle class="node" cx="178.1" cy="72.3" r="2.7" style="--d:0.02s;--t:3.83s"/>
+      <circle class="node node--cyan" cx="74.1" cy="269.9" r="2.7" style="--d:0.36s;--t:4.16s"/>
+      <circle class="node" cx="301.5" cy="167.3" r="2.7" style="--d:0.17s;--t:3.25s"/>
+      <circle class="node" cx="214.1" cy="278.7" r="2.7" style="--d:1.22s;--t:3.76s"/>
+      <circle class="node" cx="267.9" cy="69.3" r="2.7" style="--d:2.34s;--t:4.47s"/>
+      <circle class="node node--cyan" cx="89.2" cy="327.0" r="2.7" style="--d:3.0s;--t:4.78s"/>
+      <circle class="node" cx="311.1" cy="289.1" r="2.7" style="--d:2.86s;--t:5.31s"/>
+      <circle class="node" cx="125.9" cy="31.7" r="2.7" style="--d:1.56s;--t:3.98s"/>
+              </g>
+            </svg>
+          </figure>
+        </div>
+      </div>
+
+      <div class="stats reveal">
+        <div class="stat"><div class="num"><em>4</em></div><div class="lbl">Papers &amp; preprints</div></div>
+        <div class="stat"><div class="num">ICML · NeurIPS · OHBM · Khipu</div><div class="lbl">Venues &amp; conferences</div></div>
+        <div class="stat"><div class="num">Paris · Jülich</div><div class="lbl">Currently based between</div></div>
+      </div>
+    </section>
+
+    <!-- ============ About ============ -->
+    <section id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="overline">About</p>
+          <h2>From physics to AI Safety</h2>
+        </div>
+        <div class="about-grid">
+          <div class="reveal">
+            <p class="about-lead">I'm a physicist turned neuroscientist and deep learning researcher, currently a PhD candidate at the Paris Brain Institute and Forschungszentrum Jülich.</p>
+            <p class="about-body">My trajectory runs from the mathematical foundations of particle physics, through the study of human and machine robustness to adversarial attacks, and into deep learning for clinical brain signals. This has meant working hands-on with transformer-based foundation models and graph variational autoencoders on EEG data from patients with disorders of consciousness. I'm interested in tracing how clinical concepts emerge and organize themselves inside foundation models, and I've extended this curiosity to the Platonic Representation Hypothesis, investigating whether foundation models trained independently on brain recordings and astrophysics data converge to shared representational structures as they scale. These questions, at the boundary between understanding models and trusting them, are what drew me into AI safety and mechanistic interpretability. I am currently a MARS fellow investigating persona manifolds in LLMs.</p>
+          </div>
+          <div class="interests reveal">
+            <h3>Research interests</h3>
+            <div class="chips">
+              <span class="chip accent">AI safety</span>
+              <span class="chip accent">Mechanistic interpretability</span>
+              <span class="chip">EEG &amp; brain foundation models</span>
+              <span class="chip">Disorders of consciousness</span>
+              <span class="chip">Representation learning</span>
+              <span class="chip">Graph neural networks</span>
+              <span class="chip">Adversarial robustness</span>
+              <span class="chip">Deep learning for clinical signals</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Publications ============ -->
+    <section id="publications">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="overline">Publications</p>
+          <h2>Selected papers</h2>
+          <p class="lede">Names in bold indicate my authorship.</p>
+        </div>
+        <div class="pub-list">
+
+          <article class="pub reveal">
+            <div class="pub-meta">
+              <div class="pub-venue">ICML 2026</div>
+              <div class="pub-sub">Mech. Interp. Workshop</div>
+              <div class="pub-year">2026</div>
+            </div>
+            <div>
+              <h3 class="pub-title">The Platonic Universe: Do Foundation Models See the Same Sky?</h3>
+              <p class="pub-authors"><span class="me">Borrell, T.</span>, Dillmann, S., Duraphe, K., Eris, F., Khederlarian, A., Kumar, A., Marraffini, G., Smith, M. J., Sourav, S., Di Tella, R., Wu, J. F.</p>
+              <p class="pub-desc">Tests the Platonic Representation Hypothesis in astronomy, probing whether foundation models trained independently on different astronomical data converge toward a shared internal representation as they scale.</p>
+              <div class="pub-links">
+                <a class="tag" href="assets/papers/Platonic_Universe.pdf" target="_blank" rel="noopener">PDF</a>
+                <a class="tag" href="https://github.com/UniverseTBD/platonic-universe" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="pub reveal">
+            <div class="pub-meta">
+              <div class="pub-venue">Preprint</div>
+              <div class="pub-sub">Submitted to NeurIPS 2026</div>
+              <div class="pub-year">2026</div>
+            </div>
+            <div>
+              <h3 class="pub-title">What Have EEG Foundation Models Actually Learned About the Conscious Brain?</h3>
+              <p class="pub-authors"><span class="me">Borrell, T.</span>, Belloli, L., Marraffini, G., Patil, K. R., Sitt, J. D., Raimondo, F.</p>
+              <p class="pub-desc">The first systematic benchmark of EEG and time-series foundation models (TOTEM, LaBraM, NeuroLM, CBraMod, EEGPT, BIOT, SleepFM) for classifying patients with disorders of consciousness. EEG-pretrained and decoder-only models consistently outperform general-purpose time-series models.</p>
+              <div class="pub-links">
+                <a class="tag" href="assets/papers/EEG_Foundation_Models.pdf" target="_blank" rel="noopener">PDF</a>
+                <a class="tag" href="https://github.com/trinidadBorrell/doc-benchmark" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="pub reveal">
+            <div class="pub-meta">
+              <div class="pub-venue">Preprint</div>
+              <div class="pub-sub">Submitted to NeurIPS 2026</div>
+              <div class="pub-year">2026</div>
+            </div>
+            <div>
+              <h3 class="pub-title">The Variance Brain Foundation Models Forgot: Third-Order Statistics Predict Cognition Where Billion-Parameter Models Fail</h3>
+              <p class="pub-authors">Marraffini, G., Mahuas, G., <span class="me">Borrell, T.</span>, Shevchenko, V., Wassermann, D.</p>
+              <p class="pub-desc">Shows that brain foundation models preserve a signal's variance but discard its third-order structure, and it is that third-order signal that predicts cognition where billion-parameter models fail.</p>
+              <div class="pub-links">
+                <a class="tag" href="https://arxiv.org/abs/2606.04010" target="_blank" rel="noopener">arXiv</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="pub reveal">
+            <div class="pub-meta">
+              <div class="pub-venue">Preprint</div>
+              <div class="pub-sub">Submitted to NeurIPS 2026</div>
+              <div class="pub-year">2026</div>
+            </div>
+            <div>
+              <h3 class="pub-title">Humans Can Correct Their Judgements Through Debate, but Weaker AI Models Can Not</h3>
+              <p class="pub-authors">Carro, M., Mester, D., Nieto, F., Stanchi, O., Bergman, G., Marraffini, G., <span class="me">Borrell, T.</span>, et al.</p>
+              <p class="pub-desc">Compares how humans and language models revise their judgements through debate, finding that weaker AI models fail to correct themselves where humans do.</p>
+              <div class="pub-links">
+                <a class="tag" href="assets/papers/Humans_Correct_Judgements.pdf" target="_blank" rel="noopener">PDF</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Experience ============ -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="overline">Experience</p>
+          <h2>Research, engineering &amp; teaching</h2>
+        </div>
+        <div class="timeline">
+
+          <div class="tl-item reveal">
+            <div class="tl-top"><span class="tl-role">AI Safety Fellow</span><span class="tl-org"><a href="https://caish.org/mars" target="_blank" rel="noopener">MARS V Programme · Cambridge AI Safety Hub</a></span><span class="tl-date">Jul 2026 – Present</span></div>
+            <div class="tl-place">Oxford, England</div>
+            <p class="tl-desc">Selected for a highly competitive AI safety research mentorship (~5% acceptance). Conducting mechanistic interpretability research on persona manifolds in large language models, mentored by <a href="https://superkaiba.github.io/" target="_blank" rel="noopener">Thomas Jiralerspong</a>.</p>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-top"><span class="tl-role">Technical AI Safety Facilitator</span><span class="tl-org"><a href="https://bluedot.org/" target="_blank" rel="noopener">BlueDot</a></span><span class="tl-date">May 2026 – Present</span></div>
+            <div class="tl-place">Remote</div>
+            <p class="tl-desc">Guiding cohorts of emerging AI safety researchers through core concepts in alignment, mechanistic interpretability, evaluations, and AI control.</p>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-top"><span class="tl-role">Doctoral Candidate</span><span class="tl-org"><a href="https://parisbraininstitute.org/" target="_blank" rel="noopener">Paris Brain Institute</a> · <a href="https://www.fz-juelich.de/en/inm/inm-7" target="_blank" rel="noopener">Forschungszentrum Jülich</a></span><span class="tl-date">Oct 2025 – Present</span></div>
+            <div class="tl-place">Paris, France · Jülich, Germany</div>
+            <p class="tl-desc">Benchmarked seven EEG and time-series foundation models for disorders of consciousness, establishing the first systematic evaluation framework for this clinical population. Designed a Graph Autoencoder over EEG functional-connectivity matrices (GraphSAGE message passing) and a hybrid CNN+GNN pipeline for context-aware cancer-cell classification. Experiments run on HTCondor HPC infrastructure with the AML group (INM-7).</p>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-top"><span class="tl-role">AI Engineer</span><span class="tl-org"><a href="https://parisbraininstitute.org/" target="_blank" rel="noopener">Paris Brain Institute</a></span><span class="tl-date">Apr 2025 – Oct 2025</span></div>
+            <div class="tl-place">Paris, France</div>
+            <p class="tl-desc">Developed preprocessing and marker-computation pipelines for multi-subject clinical EEG data, containerizing the full pipeline with Docker for reproducible execution across research environments.</p>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-top"><span class="tl-role">AI Researcher</span><span class="tl-org"><a href="https://www.cocucolab.org/" target="_blank" rel="noopener">Consciousness, Culture &amp; Complexity Lab</a></span><span class="tl-date">Feb 2024 – Apr 2025</span></div>
+            <div class="tl-place">Buenos Aires, Argentina</div>
+            <p class="tl-desc">Investigated the differential impact of adversarial perturbations on human visual perception and CNNs (EfficientNet, ResNet, Inception V3); presented as first author at Khipu 2025.</p>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-top"><span class="tl-role">Research Intern</span><span class="tl-org"><a href="http://lambda.df.uba.ar/portfolio/" target="_blank" rel="noopener">Lambda Lab</a></span><span class="tl-date">Mar 2023 – Mar 2024</span></div>
+            <div class="tl-place">Buenos Aires, Argentina</div>
+            <p class="tl-desc">Assessed coded-aperture techniques for X-ray detection through Monte Carlo–based computational analysis.</p>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-top"><span class="tl-role">Data Science Teacher</span><span class="tl-org"><a href="https://www.coderhouse.com/ar/" target="_blank" rel="noopener">CoderHouse</a></span><span class="tl-date">Jul 2021 – May 2022</span></div>
+            <div class="tl-place">Buenos Aires, Argentina</div>
+            <p class="tl-desc">Delivered live online instruction in data science: Python, data analysis, visualization, and machine learning through practical, project-based learning.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Projects ============ -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="overline">Projects</p>
+          <h2>Personal projects &amp; collaborations</h2>
+        </div>
+        <div class="grid cols-2">
+          <div class="card reveal">
+            <div class="date">Nov 2025 – Present</div>
+            <h3>Platonic Universe</h3>
+            <div class="sub">Do foundation models converge on the same sky?</div>
+            <p class="desc">Investigating whether foundation models converge toward a shared representational structure as scale increases, using astronomical data as input.</p>
+            <div class="links">
+              <a class="tag" href="https://github.com/UniverseTBD/platonic-universe" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+          <div class="card reveal">
+            <div class="date">Jan 2025 – Present</div>
+            <h3>Platonic Brain</h3>
+            <div class="sub">Convergence across EEG &amp; fMRI foundation models</div>
+            <p class="desc">Studying whether EEG and fMRI foundation models, trained independently on brain recordings, converge to the same representational structure as their scale increases.</p>
+            <div class="links">
+              <a class="tag" href="https://github.com/trinidadBorrell/platonic-brain" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Education ============ -->
+    <section id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="overline">Education</p>
+          <h2>Academic background</h2>
+        </div>
+        <div class="grid cols-2">
+          <div class="card reveal">
+            <div class="date">Sept 2025 – Present</div>
+            <h3>PhD Candidate in Neuroscience</h3>
+            <div class="sub">Sorbonne Université</div>
+            <div class="place">Paris, France</div>
+          </div>
+          <div class="card reveal">
+            <div class="date">Mar 2019 – Mar 2025</div>
+            <h3>Licentiate in Physics</h3>
+            <div class="sub">University of Buenos Aires · equivalent to a combined BSc + MSc</div>
+            <div class="place">Buenos Aires, Argentina</div>
+            <span class="badge">GPA 9.4 / 10</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Talks & Grants ============ -->
+    <section id="talks">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="overline">Recognition</p>
+          <h2>Talks, posters &amp; grants</h2>
+        </div>
+
+        <div class="grid cols-3">
+          <div class="card reveal">
+            <div class="date">Jun 2026</div>
+            <h3>OHBM 2026</h3>
+            <div class="sub">A Comprehensive Evaluation Framework for EEG Foundation Models in Disorders of Consciousness</div>
+            <div class="place">Bordeaux, France</div>
+            <span class="badge">Poster · First author</span>
+          </div>
+          <div class="card reveal">
+            <div class="date">Mar 2025</div>
+            <h3>KHIPU 2025</h3>
+            <div class="sub">Subtle or obvious? Confidence reports indicate the success of adversarial attacks on humans</div>
+            <div class="place">Santiago, Chile</div>
+            <span class="badge">Poster · First authorr</span>
+          </div>
+          <div class="card reveal">
+            <div class="date">Nov 2024</div>
+            <h3>AI Symposium · Univ. St Andrews</h3>
+            <div class="sub">Human and machine vulnerability to adversarial perturbations</div>
+            <div class="place">Buenos Aires, Argentina</div>
+            <span class="badge">Poster · First author</span>
+          </div>
+          <div class="card reveal">
+            <div class="date">Sep 2024</div>
+            <h3>AFA 2024</h3>
+            <div class="sub">Human and machine vulnerability to adversarial perturbations · Argentinian Physics Association</div>
+            <div class="place">San Luis, Argentina</div>
+            <span class="badge">Poster · First author</span>
+          </div>
+          <div class="card reveal">
+            <div class="date">Sep 2023</div>
+            <h3>AFA 2023</h3>
+            <div class="sub">Impossible Photographs · Argentinian Physics Association</div>
+            <div class="place">Buenos Aires, Argentina</div>
+            <span class="badge">Poster · First author</span>
+          </div>
+        </div>
+
+        <div class="section-head reveal" style="margin-top:clamp(40px,6vw,64px);">
+          <p class="overline">Grants &amp; scholarships</p>
+        </div>
+        <div class="grants">
+          <div class="grant reveal"><span class="g-name">BlueDot Rapid Grant</span><span class="g-desc">ICML 2026 Full Travel Grant</span></div>
+          <div class="grant reveal"><span class="g-name">Iliad Intensive 2026</span><span class="g-desc">Full Travel Grant &amp; Scholarship</span></div>
+          <div class="grant reveal"><span class="g-name">BlueDot Rapid Grant</span><span class="g-desc">Compute Grant</span></div>
+          <div class="grant reveal"><span class="g-name">ML4Good Bootcamp 2026</span><span class="g-desc">Full Travel Grant &amp; Scholarship</span></div>
+          <div class="grant reveal"><span class="g-name">Winter School AI for Sciences 2026</span><span class="g-desc">Full Travel Grant &amp; Scholarship</span></div>
+          <div class="grant reveal"><span class="g-name">Paris Brain Institute America</span><span class="g-desc">3-year Doctoral Grant</span></div>
+          <div class="grant reveal"><span class="g-name">Khipu 2025</span><span class="g-desc">Full Travel Grant</span></div>
+          <div class="grant reveal"><span class="g-name">Brains, Minds &amp; Machines 2024</span><span class="g-desc">Full Travel Grant &amp; Scholarship</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Skills ============ -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="overline">Skills</p>
+          <h2>Technologies &amp; tools</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h3>AI / ML</h3>
+            <div class="chips">
+              <span class="chip">Python</span>
+              <span class="chip">PyTorch</span>
+              <span class="chip">HuggingFace</span>
+              <span class="chip">Time-series foundation models</span>
+              <span class="chip">Fine-tuning &amp; evaluation</span>
+              <span class="chip">Mechanistic interpretability</span>
+              <span class="chip">LLMs &amp; Transformers</span>
+              <span class="chip">RAG</span>
+              <span class="chip">LangGraph · LangChain</span>
+              <span class="chip">CNNs &amp; GNNs</span>
+              <span class="chip">Agentic engineering</span>
+              <span class="chip">FastAPI · Scikit-learn</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Data &amp; Infrastructure</h3>
+            <div class="chips">
+              <span class="chip">Pandas · NumPy</span>
+              <span class="chip">SQL</span>
+              <span class="chip">MongoDB</span>
+              <span class="chip">Docker</span>
+              <span class="chip">Git · GitHub</span>
+              <span class="chip">HTCondor (HPC)</span>
+              <span class="chip">Plotly</span>
+              <span class="chip">Seaborn · Matplotlib</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Languages (spoken)</h3>
+            <div class="chips">
+              <span class="chip cyan">Spanish · Native</span>
+              <span class="chip cyan">English · TOEFL iBT 106</span>
+              <span class="chip cyan">French · DELF B1 (78)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section id="contact" class="contact">
+      <div class="container contact-inner">
+        <div class="reveal">
+          <p class="overline">Contact</p>
+          <h2>Let's get in touch</h2>
+          <p>Open to research collaborations, AI safety work, and interesting problems at the intersection of deep learning and the brain. The fastest way to reach me is by email.</p>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:triniborrell@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              triniborrell@gmail.com
+            </a>
+            <a class="btn btn-ghost" href="https://github.com/trinidadBorrell" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn-ghost" href="https://linkedin.com/in/trinidad-borrell" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Trinidad Borrell</p>
+      <div class="footer-socials">
+        <a class="icon-btn" href="https://github.com/trinidadBorrell" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.48v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.34 9.34 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.48A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+        </a>
+        <a class="icon-btn" href="https://linkedin.com/in/trinidad-borrell" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+        </a>
+        <a class="icon-btn" href="mailto:triniborrell@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ Scripts ============ -->
+  <script>
+    (function () {
+      var header = document.getElementById('site-header');
+      var toggle = document.getElementById('nav-toggle');
+      var links  = document.getElementById('nav-links');
+      var navAnchors = Array.prototype.slice.call(links.querySelectorAll('a'));
+
+      // sticky header shadow
+      var onScroll = function () { header.classList.toggle('scrolled', window.scrollY > 8); };
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+
+      // mobile menu
+      toggle.addEventListener('click', function () {
+        var open = links.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      navAnchors.forEach(function (a) {
+        a.addEventListener('click', function () { links.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); });
+      });
+
+      // reveal on scroll
+      var reveals = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        reveals.forEach(function (el) { io.observe(el); });
+      } else {
+        reveals.forEach(function (el) { el.classList.add('in'); });
+      }
+
+      // active nav link via section observation
+      var sections = navAnchors.map(function (a) { return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+      if ('IntersectionObserver' in window) {
+        var spy = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) {
+              navAnchors.forEach(function (a) { a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id); });
+            }
+          });
+        }, { rootMargin: '-45% 0px -50% 0px' });
+        sections.forEach(function (s) { spy.observe(s); });
+      }
+
+      // year
+      var y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+    })();
+  </script>
+
+</body>
+</html>
