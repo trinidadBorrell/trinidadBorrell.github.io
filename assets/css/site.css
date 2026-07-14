@@ -274,6 +274,8 @@ section { padding: clamp(64px, 9vw, 118px) 0; border-top: 1px solid var(--border
 }
 .grant:hover { border-color: rgba(var(--cyan-rgb), .45); }
 .grant .g-name { font-weight: 600; color: var(--text); font-size: .95rem; }
+.grant .g-name a { color: inherit; }
+.grant .g-name a:hover { color: var(--cyan); }
 .grant .g-desc { color: var(--muted); font-size: .9rem; margin-left: auto; text-align: right; }
 
 /* ---- Skills ---- */
