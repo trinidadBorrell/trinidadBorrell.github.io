@@ -304,6 +304,46 @@ section { padding: clamp(64px, 9vw, 118px) 0; border-top: 1px solid var(--border
   .hero-eyebrow .dot { animation: none; }
 }
 
+/* ---- Testimonials ---- */
+.blurb-link {
+  margin-top: 14px; font-size: .98rem; color: var(--faint); max-width: 54ch;
+}
+.blurb-link a {
+  color: var(--accent-ink); font-weight: 500;
+  border-bottom: 1px solid rgba(var(--accent-rgb), .35); padding-bottom: 1px;
+}
+.blurb-link a:hover { color: #fff; border-bottom-color: var(--accent); }
+.blurb-link a span { display: inline-block; transition: transform .18s ease; }
+.blurb-link a:hover span { transform: translateX(3px); }
+
+.quotes {
+  display: grid; gap: 22px; align-items: start;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr));
+}
+/* a lone testimonial shouldn't stretch to a hard-to-read line length */
+.quote:only-child { max-width: 660px; }
+.quote {
+  margin: 0; position: relative;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 30px 26px 24px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.quote:hover { transform: translateY(-3px); border-color: rgba(var(--accent-rgb), .5); box-shadow: var(--shadow); }
+.quote::before {
+  content: "\201C"; position: absolute; top: -2px; left: 18px;
+  font-family: var(--font-serif); font-size: 4.4rem; line-height: 1;
+  color: rgba(var(--accent-rgb), .28); pointer-events: none;
+}
+.quote blockquote {
+  margin: 0; position: relative;
+  font-family: var(--font-serif); font-size: 1.06rem; line-height: 1.65; color: var(--text);
+}
+.quote figcaption {
+  margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border);
+  display: flex; flex-direction: column; gap: 3px;
+}
+.q-who { font-family: var(--font-sans); font-weight: 600; font-size: .92rem; color: var(--text); }
+.q-where { font-size: .84rem; color: var(--muted); }
+
 /* ---- Responsive ---- */
 @media (max-width: 900px) {
   .hero-grid { grid-template-columns: 1fr; }
