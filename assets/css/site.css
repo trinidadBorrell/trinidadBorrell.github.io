@@ -325,14 +325,9 @@ section { padding: clamp(64px, 9vw, 118px) 0; border-top: 1px solid var(--border
 .quote {
   margin: 0; position: relative;
   background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
-  padding: 30px 26px 24px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+  padding: 26px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
 }
 .quote:hover { transform: translateY(-3px); border-color: rgba(var(--accent-rgb), .5); box-shadow: var(--shadow); }
-.quote::before {
-  content: "\201C"; position: absolute; top: -2px; left: 18px;
-  font-family: var(--font-serif); font-size: 4.4rem; line-height: 1;
-  color: rgba(var(--accent-rgb), .28); pointer-events: none;
-}
 .quote blockquote {
   margin: 0; position: relative;
   font-family: var(--font-serif); font-size: 1.06rem; line-height: 1.65; color: var(--text);
@@ -343,6 +338,9 @@ section { padding: clamp(64px, 9vw, 118px) 0; border-top: 1px solid var(--border
 }
 .q-who { font-family: var(--font-sans); font-weight: 600; font-size: .92rem; color: var(--text); }
 .q-where { font-size: .84rem; color: var(--muted); }
+
+/* longer than the default 62ch lede; keep it on a single line on desktop */
+#testimonials .section-head .lede { max-width: none; text-wrap: pretty; }
 
 /* ---- Responsive ---- */
 @media (max-width: 900px) {
