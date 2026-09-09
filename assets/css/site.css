@@ -332,6 +332,15 @@ section { padding: clamp(64px, 9vw, 118px) 0; border-top: 1px solid var(--border
   margin: 0; position: relative;
   font-family: var(--font-serif); font-size: 1.06rem; line-height: 1.65; color: var(--text);
 }
+.quote blockquote p { margin: 0 0 .85em; }
+.quote blockquote p:last-child { margin-bottom: 0; }
+/* a long testimonial spans the grid and splits into columns so it stays readable */
+.quote-wide { grid-column: 1 / -1; }
+@media (min-width: 800px) {
+  .quote-wide blockquote { column-count: 2; column-gap: 34px; }
+  .quote-wide blockquote p { break-inside: avoid; }
+}
+
 .quote figcaption {
   margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border);
   display: flex; flex-direction: column; gap: 3px;
