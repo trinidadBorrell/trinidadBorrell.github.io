@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/css/site.css?v=6">
+  <link rel="stylesheet" href="assets/css/site.css?v=7">
 </head>
 <body>
 
@@ -95,10 +95,16 @@
                   <stop offset="0%" stop-color="#4fd0e6" stop-opacity="0.30"/>
                   <stop offset="60%" stop-color="#4fd0e6" stop-opacity="0"/>
                 </radialGradient>
+                <radialGradient id="figCursor" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#7ee0f0" stop-opacity="0.30"/>
+                  <stop offset="45%" stop-color="#8098f0" stop-opacity="0.13"/>
+                  <stop offset="100%" stop-color="#8098f0" stop-opacity="0"/>
+                </radialGradient>
               </defs>
               <rect x="0" y="0" width="340" height="368" fill="url(#figBg)"/>
               <rect x="0" y="0" width="340" height="368" fill="url(#figGlowA)"/>
               <rect x="0" y="0" width="340" height="368" fill="url(#figGlowB)"/>
+              <circle class="fig-halo" cx="170" cy="184" r="118" fill="url(#figCursor)"/>
               <g class="fig-edges">
       <line class="edge edge--hl" x1="119.3" y1="73.7" x2="46.1" y2="54.7"/>
       <line class="edge edge--hl" x1="119.3" y1="73.7" x2="61.7" y2="96.5"/>
@@ -665,6 +671,120 @@
         }, { rootMargin: '-45% 0px -50% 0px' });
         sections.forEach(function (s) { spy.observe(s); });
       }
+
+      // hero constellation: nodes drift away from and light up near the pointer
+      (function () {
+        var fig = document.querySelector('.hero-figure');
+        if (!fig) return;
+        var svg = fig.querySelector('svg');
+        var halo = fig.querySelector('.fig-halo');
+        var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+        var fine   = window.matchMedia('(hover: hover) and (pointer: fine)');
+        if (reduce.matches || !fine.matches) return;
+
+        var VW = 340, VH = 368;   // viewBox units
+        var MARGIN = 90;          // px of "close enough" slack outside the figure
+        var RADIUS = 96;          // influence radius, viewBox units
+        var PUSH   = 11;          // max displacement, viewBox units
+
+        var nodes = Array.prototype.map.call(svg.querySelectorAll('.node'), function (el) {
+          return {
+            el: el,
+            x: parseFloat(el.getAttribute('cx')),
+            y: parseFloat(el.getAttribute('cy')),
+            r: parseFloat(el.getAttribute('r')),
+            dx: 0, dy: 0, f: 0, near: false
+          };
+        });
+        var byKey = {};
+        nodes.forEach(function (n) { byKey[n.x.toFixed(1) + ',' + n.y.toFixed(1)] = n; });
+
+        var edges = Array.prototype.map.call(svg.querySelectorAll('.edge'), function (el) {
+          return {
+            el: el,
+            a: byKey[parseFloat(el.getAttribute('x1')).toFixed(1) + ',' + parseFloat(el.getAttribute('y1')).toFixed(1)],
+            b: byKey[parseFloat(el.getAttribute('x2')).toFixed(1) + ',' + parseFloat(el.getAttribute('y2')).toFixed(1)],
+            lit: false
+          };
+        }).filter(function (e) { return e.a && e.b; });
+
+        var tx = VW / 2, ty = VH / 2;   // pointer target, viewBox units
+        var cx = tx, cy = ty;           // smoothed pointer
+        var tPower = 0, power = 0;      // how strongly the effect is engaged
+        var raf = null, live = false;
+
+        function onMove(ev) {
+          var rect = fig.getBoundingClientRect();
+          if (!rect.width) return;
+          var px = ev.clientX, py = ev.clientY;
+          var outX = Math.max(rect.left - px, px - rect.right, 0);
+          var outY = Math.max(rect.top - py, py - rect.bottom, 0);
+          var out = Math.sqrt(outX * outX + outY * outY);
+          tPower = out >= MARGIN ? 0 : 1 - out / MARGIN;
+          tx = ((px - rect.left) / rect.width) * VW;
+          ty = ((py - rect.top) / rect.height) * VH;
+          if (!raf) raf = requestAnimationFrame(frame);
+        }
+
+        function frame() {
+          raf = null;
+          cx += (tx - cx) * 0.16;
+          cy += (ty - cy) * 0.16;
+          power += (tPower - power) * 0.10;
+
+          var shouldBeLive = power > 0.02;
+          if (shouldBeLive !== live) { live = shouldBeLive; fig.classList.toggle('is-live', live); }
+
+          halo.setAttribute('cx', cx.toFixed(1));
+          halo.setAttribute('cy', cy.toFixed(1));
+          halo.setAttribute('r', (92 + power * 34).toFixed(1));
+
+          for (var i = 0; i < nodes.length; i++) {
+            var n = nodes[i];
+            var vx = n.x - cx, vy = n.y - cy;
+            var d = Math.sqrt(vx * vx + vy * vy) || 0.001;
+            var f = d < RADIUS ? (1 - d / RADIUS) : 0;
+            f = f * f * power;
+            n.f = f;
+            n.dx = (vx / d) * PUSH * f;
+            n.dy = (vy / d) * PUSH * f;
+            n.el.setAttribute('cx', (n.x + n.dx).toFixed(2));
+            n.el.setAttribute('cy', (n.y + n.dy).toFixed(2));
+            n.el.setAttribute('r', (n.r * (1 + f * 0.85)).toFixed(2));
+            var near = f > 0.06;
+            if (near !== n.near) { n.near = near; n.el.classList.toggle('node--near', near); }
+          }
+
+          for (var j = 0; j < edges.length; j++) {
+            var e = edges[j], a = e.a, b = e.b;
+            e.el.setAttribute('x1', (a.x + a.dx).toFixed(2));
+            e.el.setAttribute('y1', (a.y + a.dy).toFixed(2));
+            e.el.setAttribute('x2', (b.x + b.dx).toFixed(2));
+            e.el.setAttribute('y2', (b.y + b.dy).toFixed(2));
+            var ef = a.f > b.f ? a.f : b.f;
+            if (ef > 0.05) {
+              e.el.style.stroke = 'rgba(126, 224, 240, ' + (0.30 + ef * 0.55).toFixed(3) + ')';
+              e.el.style.strokeWidth = (0.85 + ef * 1.15).toFixed(2);
+              e.lit = true;
+            } else if (e.lit) {
+              e.el.style.stroke = '';
+              e.el.style.strokeWidth = '';
+              e.lit = false;
+            }
+          }
+
+          // keep animating until the pointer settles and the effect has fully relaxed
+          if (power > 0.004 || Math.abs(tx - cx) > 0.3 || Math.abs(ty - cy) > 0.3) {
+            raf = requestAnimationFrame(frame);
+          }
+        }
+
+        window.addEventListener('pointermove', onMove, { passive: true });
+        window.addEventListener('pointerleave', function () {
+          tPower = 0;
+          if (!raf) raf = requestAnimationFrame(frame);
+        });
+      })();
 
       // year
       var y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
